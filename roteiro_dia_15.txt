@@ -1,3 +1,14 @@
+Antes de tudo, no terminal digitei:
+# 1. Iniciar o gerenciador de módulos do Go
+go mod init projeto-final
+
+# 2. Baixar o Framework Web (Gin)
+go get -u github.com/gin-gonic/gin
+
+# 3. Baixar o ORM (GORM) e o driver Pure Go do SQLite
+go get -u gorm.io/gorm
+go get github.com/glebarez/sqlite
+
 Mostre o VS Code: Mostre o arquivo main.go aberto e explique brevemente: "Aqui defini a struct Produto e usei o AutoMigrate do GORM para criar o banco SQLite."
 
 Mostre o Terminal: Rode o comando go run main.go e mostre o servidor iniciando.
