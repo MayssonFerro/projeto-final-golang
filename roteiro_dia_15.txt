@@ -1,0 +1,9 @@
+Mostre o VS Code: Mostre o arquivo main.go aberto e explique brevemente: "Aqui defini a struct Produto e usei o AutoMigrate do GORM para criar o banco SQLite."
+
+Mostre o Terminal: Rode o comando go run main.go e mostre o servidor iniciando.
+
+Mostre o Navegador: Abra localhost:8080 e mostre a mensagem JSON "Hello World".
+
+Mostre o Arquivo: Volte à pasta do projeto e destaque que o arquivo inventario.db foi criado.
+
+Encerre: "Dia 1 concluído, dependências instaladas e banco conectado."
