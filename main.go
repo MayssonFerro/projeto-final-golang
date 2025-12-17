@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"net/url"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
@@ -61,7 +62,10 @@ func main() {
 	})
 
 	r.GET("/sucesso", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "sucesso.html", nil)
+		nome := c.Query("nome")
+		c.HTML(http.StatusOK, "sucesso.html", gin.H{
+			"Nome": nome,
+		})
 	})
 
 	r.POST("/salvar", func(c *gin.Context) {
@@ -81,7 +85,7 @@ func main() {
 			db.Create(&produto)
 		}
 
-		c.Redirect(http.StatusFound, "/sucesso")
+		c.Redirect(http.StatusFound, "/sucesso?nome="+url.QueryEscape(produto.Nome))
 	})
 
 	r.GET("/deletar/:id", func(c *gin.Context) {

@@ -1,28 +1,48 @@
-# Para rodar o projeto
+# Controle de Estoque
 
-## Iniciar o gerenciador de módulos do Go
+Este e um projeto simples de controle de estoque desenvolvido em Go. Ele permite listar, adicionar, editar e excluir produtos de um banco de dados SQLite.
+
+## Tecnologias Utilizadas
+
+- Go (Golang)
+- Gin (Web Framework)
+- GORM (ORM Library)
+- SQLite (Banco de dados)
+- HTML (Templates)
+
+## Funcionalidades
+
+- Listagem de produtos
+- Cadastro de novos produtos
+- Edicao de produtos existentes
+- Exclusao de produtos
+
+## Como Rodar o Projeto
+
+Siga os passos abaixo para executar a aplicação em sua máquina.
+
+### 1. Inicializar o modulo (caso ainda nao tenha feito)
 
 ```bash
 go mod init projeto-final
 ```
 
-## Baixe as dependencias
+### 2. Instalar as dependencias
 
 ```bash
 go get -u github.com/gin-gonic/gin
-
 go get -u gorm.io/gorm
 go get github.com/glebarez/sqlite
 ```
 
-## Rodar
+### 3. Executar a aplicacao
 
 ```bash
 go run main.go
 ```
 
-Acesse no navegador: <http://localhost:8080>
+### 4. Acessar no navegador
 
-você verá o {"message":"Hello, World!"}
+Abra o seu navegador e acesse o seguinte endereco:
 
-o arquivo estoque.db deve ter aparecido
+<http://localhost:8080>
